@@ -3,6 +3,18 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
+                /* common shared style */
+.btn-primary{
+border-radius: 8px;
+background: #FF900E;
+color: #fff;
+text-align: center;
+border: 0;
+padding: 20px 25px;
+font-size: 1.2rem;
+font-weight: 600;
+cursor: pointer;
+}
   *{
     font-family: 'Work Sans', sans-serif;
   }
@@ -34,4 +46,47 @@
     font-size: 1.rem;
     color: #424242;
     font-weight: 500;
+  }
+  /* banner style */
+  .banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+ 
+  }
+  .banner-title{
+    font-size:3.5rem;
+    color: #131313;
+    font-weight: 700px;
+  }
+  .banner-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400px;
+    margin-bottom: 30px;
+  }
+  .banner img{
+   margin-top:20px;
+   width: 100%;
+  }
+
+  /* Responsive */
+  /* mobile device */
+  @media screen and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+  }
+
+  /* tablet device */
+  @media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+    }
   }
